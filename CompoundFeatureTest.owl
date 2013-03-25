@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY CompoundFeatureTest "http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#"
+     xml:base="http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:CompoundFeatureTest="http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasFunctionalProperty -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasFunctionalProperty">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasFunctionalRelation -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasFunctionalRelation">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasRelation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasSpatialOccupancy -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasSpatialOccupancy">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasSpatialProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasSpatialProperty -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasSpatialProperty">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasSpatialRelation -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasSpatialRelation">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasStructuralProperty -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasStructuralProperty">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasStructuralRelation -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasStructuralRelation">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:range rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasTopologicalProperty -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasTopologicalProperty">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasTopologicalRelation -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;hasTopologicalRelation">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#isAbove -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;isAbove">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:range rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasTopologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#isAdjacentTo -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;isAdjacentTo">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:range rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasTopologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#isApartFrom -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;isApartFrom">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:range rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasTopologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#isBelow -->
+
+    <owl:ObjectProperty rdf:about="&CompoundFeatureTest;isBelow">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:range rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasTopologicalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasDistance -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasDistance">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasTopologicalValue"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasFunctionalValue -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasFunctionalValue">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasOccupancy -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasOccupancy">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasSpatialValue"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasSpatialValue -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasSpatialValue">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasStructuralValue -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasStructuralValue">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasThickness -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasThickness">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasSpatialValue"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasTopologicalValue -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasTopologicalValue">
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasValue"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#hasVolume -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;hasVolume">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasSpatialValue"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#isBase -->
+
+    <owl:DatatypeProperty rdf:about="&CompoundFeatureTest;isBase">
+        <rdfs:domain rdf:resource="&CompoundFeatureTest;Feature"/>
+        <rdfs:subPropertyOf rdf:resource="&CompoundFeatureTest;hasStructuralValue"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#CompoundFeature -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;CompoundFeature">
+        <rdfs:subClassOf rdf:resource="&CompoundFeatureTest;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#Feature -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;Feature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#FunctionalProperty -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;FunctionalProperty">
+        <rdfs:subClassOf rdf:resource="&CompoundFeatureTest;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#Property -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;Property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#SpatialOccupancy -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;SpatialOccupancy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&CompoundFeatureTest;Fill"/>
+                    <rdf:Description rdf:about="&CompoundFeatureTest;Empty"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&CompoundFeatureTest;SpatialProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#SpatialProperty -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;SpatialProperty">
+        <rdfs:subClassOf rdf:resource="&CompoundFeatureTest;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#StructuralProperty -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;StructuralProperty">
+        <rdfs:subClassOf rdf:resource="&CompoundFeatureTest;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#TopologicalProperty -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;TopologicalProperty">
+        <rdfs:subClassOf rdf:resource="&CompoundFeatureTest;Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#UnitFeature -->
+
+    <owl:Class rdf:about="&CompoundFeatureTest;UnitFeature">
+        <rdfs:subClassOf rdf:resource="&CompoundFeatureTest;Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#Empty -->
+
+    <owl:NamedIndividual rdf:about="&CompoundFeatureTest;Empty">
+        <rdf:type rdf:resource="&CompoundFeatureTest;SpatialOccupancy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/skang47/ontologies/2013/2/CompoundFeatureTest.owl#Fill -->
+
+    <owl:NamedIndividual rdf:about="&CompoundFeatureTest;Fill">
+        <rdf:type rdf:resource="&CompoundFeatureTest;SpatialOccupancy"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
